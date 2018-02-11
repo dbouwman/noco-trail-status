@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Northern Colorado Mountain Bike Trail Status">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>noco trail status</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body >
+    <nav class="navbar">
+      <!-- <a href="#" class="toggle"><i class="fa fa-reorder"></i></a> -->
+      <a href="#" class="brand">noco trail status</a>
+      <div class="right">
+        <a href="#" class="link closed" id="showClosed">Closed</a>
+        <a href="#" class="link open" id="showOpen">Open</a>
+      </div>
+    </nav>
+    <div class="content" id="lory"></div>
+    <div class="content" id="trails"></div>
+    <div class="content" id="about">
+      <h3>About this site...</h3>
+      <h4>Why</h4>
+      <p>The NOCO Trail Report takes ages to load on my phone - I simply wanted to know the status of trails. So I built this.</p>
+      <h4>Data</h4>
+      <p>The data is pulled from same API as the <a href="https://gisweb.fcgov.com/Html5Viewer/Index.html?viewer=trail%20status">NOCO Trail Report</a>.</p>
+      <h4>Lory???</h4>
+      <p>Short verion is they make it very difficult to get the trail status. Visit the <a href="http://cpw.state.co.us/placestogo/parks/Lory">Lory State Park</a> page. I may get frustrated enough to solve this at some point</p>
+      <h4>Developer?</h4>
+      <p>Code is on <a href="">Github</a></p>
+    </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/curry.js"></script>
+    <script src="scripts/arcgis-query.js"></script>
+    <script src="scripts/helpers.js"></script>
+    <script src="scripts/trails.js"></script>
+
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
